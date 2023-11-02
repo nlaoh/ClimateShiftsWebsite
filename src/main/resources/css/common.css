@@ -1,0 +1,721 @@
+/* External CSS style file */
+
+* {
+   box-sizing: border-box;
+}
+
+/* Remove formatting from links */
+a {
+   color: inherit;
+   text-decoration: inherit;
+}
+
+body {
+   font-family: Arial;
+   margin: 0;
+   padding: 0;
+   font-size: 15px;
+   background: #ffffff;
+}
+
+.main {
+   min-height: calc(100vh - 77.6px - 68px - 17.6px);
+}
+
+
+.header {
+   padding: 10px;
+   text-align: center;
+   background-color: #ffffff;
+   color: #000000;
+}
+
+#welcomeHeader {
+   /* background-color: #d6d5d5; */   
+   background-image: linear-gradient(180deg, rgb(170, 168, 168), rgb(90, 90, 90));
+}
+
+
+.header h1 {
+   font-size: 45px;
+   font-weight: bold;
+}
+
+.header h2 {
+   font-size: 32px;
+   font-weight: normal;
+}
+
+/* Content (div) formatting */
+.content p {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   text-align: left;
+   font-size: 120%;
+   line-height: 150%;
+   margin: 0% 25% 2%;
+
+}
+
+.box {
+   background-color: #cfcfcf;
+   border-radius: 11px;
+   width: 350px;
+   height: 200px;
+   margin-bottom: 10px;
+}
+
+.box1 {
+   grid-area: box1;
+}
+
+.box2 {
+   grid-area: box2;
+}
+
+.graph {
+   grid-area: graph;
+}
+
+.graph h2 {
+   text-align: center;
+}
+
+.grid-container {
+   display: grid;
+   place-items: center;
+   grid-template-areas: 'box1 graph'
+      'box2 graph';
+   grid-template-columns: 1fr 2fr;
+   gap: 10px;
+   margin: 0 10%;
+   background-color: #ffffff;
+   padding: 10px;
+}
+
+.grid-container-sg {
+   display: grid;
+   place-items: center;
+   grid-template-columns: 40% 60%;
+   grid-template-rows: 1fr;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+.item1-sg {
+   grid-column: 1;
+   grid-row: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.item2-sg {
+   grid-column: 2;
+   grid-row: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-width: 500px;
+}
+
+.box-sg-country {
+   display: block;
+   background-color: #cfcfcf;
+   border-radius: 11px;
+   width: 350px;
+   height: 290px;
+   margin-bottom: 30px;
+}
+
+.box-sg-countryT2 {
+   display: block;
+   background-color: #cfcfcf;
+   border-radius: 11px;
+   width: 350px;
+   height: 370px;
+   margin-bottom: 30px;
+}
+
+.box-sg-countryT2 h4,
+.box-sg-world h4 {
+   color: #000000;
+   text-align: center;
+   margin: 0;
+   padding: 10px;
+   padding-bottom: 0px;
+}
+
+.box-sg-world {
+   display: block;
+   background-color: #cfcfcf;
+   border-radius: 11px;
+   width: 350px;
+   height: 215px;
+   margin-bottom: 10px;
+}
+
+.box-sg-country h4,
+.box-sg-world h4 {
+   color: #000000;
+   text-align: center;
+   margin: 0;
+   padding: 10px;
+   padding-bottom: 0px;
+}
+
+.box-dd-2 {
+   display: block;
+   background-color: #cfcfcf;
+   border-radius: 11px;
+   width: 370px;
+   height: 510px;
+   margin-bottom: 30px;
+}
+
+.box-dd-2-page1 {
+   display: block;
+   background-color: #cfcfcf;
+   border-radius: 11px;
+   width: 370px;
+   height: 135px;
+   margin-bottom: 30px;
+}
+
+.submit3B {
+   margin-top: 20px;
+}
+
+.box-dd-2-page1 h4 {
+   color: #000000;
+   text-align: center;
+   margin: 0;
+   padding: 10px;
+   padding-bottom: 0px;
+}
+
+.box-dd-2 h4 {
+   color: #000000;
+   text-align: center;
+   margin: 0;
+   padding: 10px;
+   padding-bottom: 0px;
+}
+
+.box-sg {
+   background-color: #cfcfcf;
+   border-radius: 11px;
+   width: 350px;
+   height: 250px;
+   margin-bottom: 10px;
+}
+
+.item2-sg {
+   grid-column: 2;
+   grid-row: 1;
+   align-items: center;
+   text-align: center;
+}
+
+.grid-container-sg h3 {
+   text-align: center;
+}
+
+.box1 h2,
+.box2 h2 {
+   color: #000000;
+   font-size: 20px;
+   text-align: center;
+   margin: 0;
+   padding: 10px;
+   padding-bottom: 0px;
+}
+
+.box1 p,
+.box2 p {
+   color: #000000;
+   font-size: 19px;
+   text-align: center;
+   margin: 0;
+   padding-top: 15px;
+}
+
+/* Make the logo have a rounded edge */
+img.top-image {
+   vertical-align: middle;
+}
+
+/* CSS Layout from W3Schools: https://www.w3schools.com/css/css_templates.asp */
+/* Style the top navigation bar */
+
+/* name */
+.name {
+
+   text-align: center;
+   font-family: 'Tsukimi Rounded', sans-serif;
+}
+
+.name h1 {
+   font-size: 40px;
+   color: #000000;
+   padding: 10px;
+   margin-bottom: 0px;
+}
+
+
+.topnav {
+   overflow: visible;
+   display: flex;
+   justify-content: center;
+   padding: 14px 16px;
+   background-color: #bbbbbb;
+   align-items: center;
+}
+
+/* Style the topnav links */
+.topnav a {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: #000000;
+   text-align: center;
+   padding: 10px 13px;
+   border-radius: 11px;
+   text-decoration: none;
+   display: inline-block;
+   min-width: 100px;
+   box-sizing: border-box;
+   justify-content: center;
+   text-align: center;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+   background-color: #ddd;
+   color: black;
+   border-radius: 11px;
+}
+
+.currentPage {
+   background-color: #e8e8e8;
+   color: #000000;
+   border: 2px solid #676767;
+   border-radius: 11px;
+}
+
+/* Style the content */
+.content {
+   background-color: #ffffff;
+   padding: 10px;
+}
+
+.buttons-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+}
+
+.button {
+   width: 200px;
+   height: 30px;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.button button {
+   width: 150px;
+   height: 30px;
+   align-items: center;
+   border-radius: 11px;
+   border-color: transparent;
+}
+
+.active-button {
+   background-color: #c0c0c0;
+   color: rgb(0, 0, 0);
+}
+
+/* Shallow Glance view buttons */
+.buttons {
+   width: 350px;
+   height: 20px;
+   margin-bottom: 35px;
+}
+
+.buttons button {
+   width: 120px;
+   margin-left: 27.5px;
+   margin-right: 27.5px;
+   border-radius: 11px;
+   border-color: transparent;
+   height: 35px;
+}
+
+.dropdown-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 10px;
+   padding-bottom: 5px;
+
+}
+
+.dropdown {
+   display: block;
+   width: 250px;
+   padding: 8px;
+   border-radius: 11px;
+   text-align: center;
+   border-color: transparent;
+}
+
+.dropdown:focus {
+   outline: none;
+}
+
+.grid-item-sg-st1.item2-sg {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.viewTableOrGraph {
+   width: 350px;
+   height: 20px;
+   margin-bottom: 50px;
+}
+
+#viewButtonsId {
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   width: 350px;
+   height: 20px;
+   margin-bottom: 35px;
+}
+
+#viewButtonsId button {
+   width: 120px;
+   margin-left: 27.5px;
+   margin-right: 27.5px;
+   border-radius: 11px;
+   border-color: transparent;
+   height: 35px;
+}
+
+.submitbutton {
+   width: 100px;
+   height: 30px;
+   display: block;
+   align-items: center;
+   border-radius: 11px;
+   border-color: transparent;
+   font-weight: bolder;
+   background-color: #b5b5b5;
+   color: rgb(0, 0, 0);
+   margin-top: 20px;
+}
+
+#resetbutton {
+   width: 80px;
+   height: 25px;
+   display: block;
+   align-items: center;
+   border-radius: 11px;
+   border-color: transparent;
+   font-weight: bolder;
+   background-color: rgb(255, 92, 92);
+   color: rgb(0, 0, 0);
+   margin-top: 20px;
+}
+
+.submitbutton.active {
+   background-color: #bebebe;
+}
+
+.center {
+   display: block;
+   margin: 10 auto;
+}
+
+.selectedPopulationTitle {
+   margin-top: 30px;
+}
+
+.viewTableOrGraph {
+   display: block;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   width: 350px;
+   height: 20px;
+}
+
+#viewTableOrGraphButtonsId {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   width: 350px;
+   height: 20px;
+   margin-bottom: 35px;
+}
+
+#viewTableOrGraphButtonsId button {
+   width: 120px;
+   margin-left: 27.5px;
+   margin-right: 27.5px;
+   border-radius: 11px;
+   border-color: transparent;
+   height: 35px;
+}
+
+table {
+   width: 100%;
+   border-collapse: collapse;
+}
+
+.shallowGlanceT2Table {
+   height: 600px;
+}
+
+.shallowGlanceT2Table tbody {
+   overflow: auto;
+   height: 100%;
+}
+
+.fixedheight {
+   height: 600px;
+}
+
+
+td {
+   border: 1px solid black;
+}
+
+.countryTableDiv {
+   width: 30em;
+   overflow-y: auto;
+}
+
+.dataTables_wrapper {
+   width: 100%;
+   display: none;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+/* .changeTable_dataTables_wrapper {
+   width: 100%;
+   display: block;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.changeTable_dataTables_paginate {
+   margin: auto;
+   margin-bottom: 20px;
+} */
+
+.dataTables_paginate {
+   margin: auto;
+   margin-bottom: 20px;
+}
+
+.dataTables_length {
+   display: none;
+}
+
+.dataTables_filter {
+   display: none;
+}
+
+.worldPopGraph {
+   display: block;
+}
+
+
+#worldTable_wrapper {
+   display: none;
+   margin-top: 30px;
+   min-width: 500px;
+}
+
+#worldError {
+   margin-top: 150px;
+}
+
+#countryError {
+   margin-top: 150px;
+}
+
+.viewButtonsId {
+   display: flex;
+   justify-content: space-between;
+   min-width: 300px;
+   margin-bottom: 30px;
+}
+
+.viewButtonsId a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #000000;
+   text-align: center;
+   padding: 10px 13px;
+   text-decoration: none;
+   display: inline-block;
+   min-width: 100px;
+   background-color: #f0f0f0;
+   box-sizing: border-box;
+   border-radius: 11px;
+}
+
+#currentView {
+   background-color: #c0c0c0;
+   color: black;
+   border-radius: 11px;
+}
+
+#dataOptions {
+   display: block;
+}
+
+#selectedGeographicRegion {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+#selectedType {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+#selectedMeasure {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+input[type="radio"] {
+   display: none;
+   /* Hide the actual radio input */
+}
+
+label {
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #e9e9e9;
+   border-radius: 11px;
+   cursor: pointer;
+   margin-left: 8px;
+   margin-right: 8px;
+}
+
+input[type="radio"]:checked+label {
+   background-color: #c0c0c0;
+   color: #000000;
+}
+
+/* Dropdown menu styles */
+.dropdownNavbar {
+   position: relative;
+   display: inline-block;
+}
+
+.dropdownNavbar-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 250px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   left: -27%;
+   top: 100%;
+   border-radius: 11px;
+}
+
+.dropdownNavbar:hover .dropdownNavbar-content {
+   display: block;
+}
+
+/* Center-align dropdown links */
+.dropdownNavbar-content a {
+   display: block;
+   text-align: center;
+}
+
+.currentSelected {
+   background-color: #e8e8e8;
+   color: #000000;
+   border: 0px solid #717171;
+   border-radius: 11px;
+}
+
+#timePeriod {
+   border-radius: 5px;
+   border: 1px solid #696969;
+   background: white;
+}
+
+#shallowGlanceHeader {
+   background-image: url("stacked-waves-haikei3.svg");
+   background-size: cover;
+   color: white;
+}
+
+#deepDive2Header {
+   background-image: url("stacked-waves-haikei.svg");
+   background-size: cover;
+   margin-bottom: 20px;
+   color: white;
+}
+
+.tableClass {
+   margin-right: 30px;
+   min-width: 700px;
+}
+
+.tableClass td {
+   text-align: center;
+   min-width: 100px;
+}
+
+.tableClass table,
+.tableClass td,
+.tableClass th {
+   border: 1px solid black;
+}
+
+.measureType {
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+
+
+/* Style the footer */
+.footer {
+   background-color: #cccccc;
+   padding: 4px;
+   text-align: center;
+   margin-top: 30px;
+}

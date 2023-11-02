@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    
+<head>
+    <title>Our Mission</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="pagemission.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Tsukimi Rounded'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+</head>
+
+<body>
+    <!-- Logo -->
+    <div class="name">
+        <h1><a href='/'>Climate Shifts</a></h1>
+    </div>
+
+    <!-- Navigation bar -->
+    <div class='topnav'>
+        <a href='/'>Homepage</a>
+        <a class='currentPage' href='mission.html'>Our Mission</a>
+        <div class="dropdownNavbar">
+            <a class="dropbtn">View Changes By <i class='fa fa-solid fa-angle-down'></i></a>
+            <div class="dropdownNavbar-content">
+                <a href='ShallowGlanceC.html'>Temperature and population change by Country/World</a>
+                <a href='ShallowGlanceT2.html'>Temperature change by City/State</a>
+                <a href='DeepDive.html'>Temperature over extended periods</a>
+                <a href='DeepDive2.html'>Time periods with similar temperature and/or population</a>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+    <div class="titlebar">
+        <div class='header'>
+            <h1>Our Mission</h1>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <!-- Mission Description -->
+        <div class='header'>
+            <!-- <h2>What <em>is</em> our mission?</h2> -->
+        </div>
+        <p>
+            <b>Climate Shifts'</b> mission is to provide easily accessible <b>population</b> and <b>land temperature</b>
+            data in the world.
+            We want to guide the sustainability and climate change movement by providing
+            accurate and educational resources about our climate's changing weather.<br><br>
+        </p>
+        <div class="header">
+            <h3>Who are we?</h3>
+        </div>
+        <p>
+            We are a partnership of <b>2</b> students who wanted to provide easy-to-use climate change data, to
+            contribute to a more informed
+            and planned approach to maintaining our planet's weather.<br><br>
+
+            Do not hesitate to send us an email, we appreciate all your thoughts and feedback!
+        </p>
+        <!-- Help and Documentation -->
+        <div class='header'>
+            <h2>Using the website</h2>
+        </div>
+        <p>Climate Shifts is very easy to use! Below is a description of how to use the site!<br><br>
+
+            Just use the intuitive navigation bar at the top of any
+            page to go wherever you need to go. Click on the <em>Climate Shifts</em> logo to return to the
+            homepage if you ever get lost! <br><br>
+
+            If you are new to the site, we have a <b>shallow</b> section which can give you a brief,
+            but insightful look at our population and temperature data.<br>
+            While those of you who are experts and looking for the nitty-gritty details will be at home in the
+            <b>deep-dive</b> section.<br><br>
+
+            To use our <b>shallow section pages</b>, please input the data that you are looking for in the dropdown
+            boxes to the left (make sure every box is filled!)
+            and then finally press submit at the bottom of the box coloured in grey.
+        </p>
+        <!-- Personas -->
+        <div class='header'>
+            <h2>Our Personas</h2>
+        </div>
+        <!-- Row of personas -->
+        <div class="boxes row">
+            <!-- Box1 -->
+            <div class="box">
+                <img th:src="${persona1FilePath}" style="width:100%;height:50%;"
+                    alt="Linus Sebastian looking at the camera">
+                <div class="box">
+                    <h2 th:text="${persona1Name}"></h2>
+                    <h3 th:text="${persona1Attribute1}"></h3>
+                    <p th:text="${persona1Attribute1Desc}"></p>
+                    <h3 th:text="${persona1Attribute2} + 's'"></h3>
+                    <li th:each="attribute : ${persona1Attribute2Desc}" th:text="${attribute}"></li>
+                    <h3 th:text="${persona1Attribute3} + 's'"></h3>
+                    <li th:each="attribute : ${persona1Attribute3Desc}" th:text="${attribute}"></li>
+                    <h3 th:text="${persona1Attribute4} + 's'"></h3>
+                    <li th:each="attribute : ${persona1Attribute4Desc}" th:text="${attribute}"></li>
+
+                </div>  
+
+            </div>
+            <!-- Box2 -->
+            <div class="box">
+                <img th:src="${persona2FilePath}" style="width:100%;height:50%;"
+                    alt="Elliot Wellick teaching in front of a chalkboard">
+                <div class="box">
+                    <h2 th:text="${persona2Name}"></h2>
+                    <h3 th:text="${persona2Attribute1}"></h3>
+                    <p th:text="${persona2Attribute1Desc}"></p>
+                    <h3 th:text="${persona2Attribute2} + 's'"></h3>
+                    <li th:each="attribute : ${persona2Attribute2Desc}" th:text="${attribute}"></li>
+                    <h3 th:text="${persona2Attribute3} + 's'"></h3>
+                    <li th:each="attribute : ${persona2Attribute3Desc}" th:text="${attribute}"></li>
+                    <h3 th:text="${persona1Attribute4} + 's'"></h3>
+                    <li th:each="attribute : ${persona2Attribute4Desc}" th:text="${attribute}"></li>
+
+                </div>
+            </div>
+            <!-- Box3 -->
+            <div class="box">
+                <img th:src="${persona3FilePath}" style="width:100%;height:50%;"
+                    alt="Academic Andy at his desk visibly frustrated over worksheets">
+                <div class="box">
+                    <h2 th:text="${persona3Name}"></h2>
+                    <h3 th:text="${persona3Attribute1}"></h3>
+                    <p th:text="${persona3Attribute1Desc}"></p>
+                    <h3 th:text="${persona3Attribute2} + 's'"></h3>
+                    <li th:each="attribute : ${persona3Attribute2Desc}" th:text="${attribute}"></li>
+                    <h3 th:text="${persona3Attribute3} + 's'"></h3>
+                    <li th:each="attribute : ${persona3Attribute3Desc}" th:text="${attribute}"></li>
+                    <h3 th:text="${persona3Attribute4} + 's'"></h3>
+                    <li th:each="attribute : ${persona3Attribute4Desc}" th:text="${attribute}"></li>
+
+                </div>
+            </div>
+        </div>
+        <!-- Authors Descriptions -->
+        <div class='header'>
+            <h2>Meet the authors!</h2>
+        </div>
+        <!-- Column of authors -->
+        <div class="boxes column">
+            <!-- Box1 -->
+            <div class="box">
+                <h1 th:text="${author1Name}"></h1>
+                <h2 th:text="'Student ID: ' + ${author1StudentID}"></h2>
+                <h3 th:text="'Contact: ' + ${author1Email}"></h3>
+                <h3>Roles</h3>
+                <ul>
+                    <li th:each="roles : ${author1Roles}" th:text="${roles}"></li>
+                </ul>
+            </div>
+            <!-- Box2 -->
+            <div class="box">
+                <h1 th:text="${author2Name}"></h1>
+                <h2 th:text="'Student ID: ' + ${author2StudentID}"></h2>
+                <h3 th:text="'Contact: ' + ${author2Email}"></h3>
+                <h3>Roles</h3>
+                <ul>
+                    <li th:each="roles : ${author2Roles}" th:text="${roles}"></li>
+                </ul>
+                </ul>
+            </div>
+        </div>
+        <!-- References -->
+        <div class="header">
+            <h2>References</h2>
+        </div>
+        <div class="boxes column">
+            <div class="box">
+                <h2>We have retrieved data from :</h2>
+                <ul>
+                    <li>Berkeley Earth - <a id="link" href="https://berkeleyearth.org/data/">Link</a></li>
+                    <li>World Bank - <a id="link" href="https://data.worldbank.org/indicator/SP.POP.TOTL">Link</a></li>
+                </ul>
+                <h2>We received inspiration from :</h2>
+                <ul>
+                    <li>NASA Global Climate Change - <a id="link" href="https://climate.nasa.gov/">Link</a></li>
+                </ul>
+                <h2>Page last updated :</h2>
+                <h3>June 13th, 2023</h3>
+
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+            <p class="footer">&#169 2023 Climate Shifts. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

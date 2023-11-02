@@ -1,0 +1,230 @@
+* {
+   box-sizing: border-box;
+}
+
+/* remove formatting from links */
+a {
+   color: inherit;
+   text-decoration: inherit;
+}
+
+#link {
+   color: blue;
+   text-decoration: underline;
+}
+
+/* name */
+.name {
+
+   text-align: center;
+   font-family: 'Tsukimi Rounded', sans-serif;
+}
+
+.name h1 {
+   font-size: 40px;
+   color: #000000;
+   padding: 10px;
+   margin-bottom: 0px;
+   margin-top: 0px;
+}
+
+body {
+   font-family: Arial;
+   font-size: 15px;
+   margin: 0;
+   padding: 0;
+   background: #ffffff;
+}
+
+.titlebar {
+   /* background-color: #c2c0c0ab; */
+   background-image: linear-gradient(180deg, rgb(170, 168, 168), rgb(90, 90, 90));
+}
+
+/* Header (div) formatting */
+.header {
+   padding: 10px;
+   text-align: center;
+   color: #000000;
+}
+
+.header h1 {
+   font-size: 380%;
+   font-weight: bold;
+}
+
+.header h2 {
+   font-size: 300%;
+   font-weight: normal;
+}
+
+.header h3 {
+   font-size: 200%;
+   font-weight: normal;
+}
+
+/* Content (div) formatting */
+.content p {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   text-align: left;
+   font-size: 147%;
+   line-height: 140%;
+   margin: 1% 22% 2%;
+
+}
+
+/* prevents text from becoming flex entities */
+h3,
+em,
+b,
+p {
+   display: contents;
+}
+
+/* h2 {
+   display: flex;
+   flex-direction: column;
+
+} */
+
+/* For creating boxes*/
+.boxes {
+   display: flex;
+   justify-content: space-evenly;
+   margin: 0% 22% 2%;
+   background-color: #8d8d8d;
+}
+
+.row {
+   flex-direction: row;
+}
+
+.column {
+   flex-direction: column;
+}
+
+.box {
+   display: flex;
+   margin: 2%;
+   flex-direction: column;
+   background-color: #d1d1d1af;
+   width: 96%;
+   height: 50%;
+}
+
+.box h1,
+.box h2 {
+   padding-left: 5px;
+   padding-right: 5px;
+}
+
+.box p,
+.box li,
+.box h3,
+.box h4 {
+   text-align: left;
+   font-size: 120%;
+   line-height: 145%;
+   margin: 2%;
+
+}
+
+.box ul {
+   list-style: disc;
+   margin: 0.5%;
+   padding-left: 15px;
+}
+
+.box img {
+   border: rgba(10, 10, 10, 0.801);
+   border-style: outset;
+   border-width: 10px;
+}
+
+
+/* CSS Layout from W3Schools: https://www.w3schools.com/css/css_templates.asp */
+/* Style the top navigation bar */
+
+.topnav {
+   overflow: visible;
+   display: flex;
+   justify-content: center;
+   padding: 14px 16px;
+   background-color: #bbbbbb;
+}
+
+/* Style the topnav links */
+.topnav a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #000000;
+   text-align: center;
+   padding: 10px 13px;
+   border-radius: 11px;
+   text-decoration: none;
+   display: inline-block;
+   min-width: 100px;
+   box-sizing: border-box;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+   background-color: #ddd;
+   color: black;
+   border-radius: 11px;
+}
+
+.currentPage {
+   background-color: #e8e8e8;
+   color: #000000;
+   border: 2px solid #676767;
+   border-radius: 11px;
+}
+
+/* Style the footer */
+.footer {
+   background-color: #cccccc;
+   padding: 4px;
+   margin-top: 30px;
+}
+
+.footer p {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   font-size: 120%;
+   line-height: 150%;
+   margin: 0% 25% 2%;
+   text-align: center;
+   margin: auto;
+}
+
+.dropdownNavbar {
+   position: relative;
+   display: inline-block;
+}
+
+.dropdownNavbar-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 250px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   left: -27%;
+   top: 100%;
+   border-radius: 11px;
+}
+
+.dropdownNavbar:hover .dropdownNavbar-content {
+   display: block;
+}
+
+/* Center-align dropdown links */
+.dropdownNavbar-content a {
+   display: block;
+   text-align: center;
+}
