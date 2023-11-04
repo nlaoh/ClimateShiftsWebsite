@@ -2,18 +2,6 @@
 # Programming Studio Project February-June 2023
 Starter code for the Studio Project. This is a simple layout connected to a GitHub Classroom that serves as the basis for implementing the studio project. 
 
-This example program provides:
-
-* A Java class for the Index page (index.html).
-* 6x Java classes for 6 pages. Additional pages can be added by adding additional classes.
-* JDBCConnection Java class, that uses the CTG Database. This class contains one method to return all LGAs contained in the Database.
-* Examples CSS (```common.css```) file in the resources directory.
-* Example image (```logo.png```) file in the resources directory with where to locate any images you want on your website
-* Starting database:
-    * ```ctg.db``` - contains a starting database for you based on the example CTG ER Model.
-* Optional helper program (``CTGProcessCSV.java``) that shows an example of how to load the SQLite database by using Java to read the CSV files and JDBC insert statements to update the CTG SQLite database.
-* Optional helper SQL files (```ctg_create_tables.sql```) that creates two tables (```LGA``` and ```PopulationStatistics```) based on the example CTG ER Model.
-
 Classes backing Web pages:
 ```bash
 ├── Index.java                    - Homepages/index page. Provides a directory to all other pages
@@ -104,6 +92,9 @@ This folder will not affect a *local* VSCode setup on a computer.
 # Authors
 * Dr. Timothy Wiley, School of Computing Technologies, STEM College, RMIT University.
 * Prof. Santha Sumanasekara, School of Computing Technologies, STEM College, RMIT University.
+
+* Mr. Natchanon Laoharawee, RMIT University
+* Mr. Russell Sheikh, RMIT University
 
 Copyright RMIT University (c) 2023
 
