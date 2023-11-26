@@ -18,7 +18,7 @@ import java.sql.Statement;
 public class JDBCConnection {
 
     // Name of database file (contained in database folder)
-    public static final String DATABASE = "jdbc:sqlite:cosc2803-apr23-studio-project-team-319-cosc2803-apr23\\database\\climate.db";
+    public static final String DATABASE = "jdbc:sqlite:database\\climate.db";
 
     /**
      * This creates a JDBC Object so we can keep talking to the database
