@@ -48,7 +48,6 @@ jobs:
       - name: Build with Maven
         run: |
           mvn clean install
-          mvn exec:java -Dexec.mainClass="main.app.App"
 
       # Step 5: Collect static files (adjust path as needed if HTML output is in a specific directory)
       - name: Prepare static site content
